@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+
+        <form action="'#"method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text id"="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"name="email"required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel"id="phone"name="phone"required><br><br>
+
+            <label>Gender</label>
+            <input type="radio"id="male" name="gender"Value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio"id="female" name="gender"Value="FeMale">
+            <label for="female">Female</label>
+
+            <input type="radio"id="other" name="gender"Value="Other">
+            <label for="other">other</label><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date"id="dob"name="dob"required><br><br>
+            
+            <label for="password">Passsword:</label><br>
+            <input type="password" id="password"name="password"required><br><br>
+
+
+            <label for="confirmpassword">Confirm  Passsword:</label><br>
+            <input type="confirmmpassword" id="Confirm password"name="confirmpassword"required><br><br>
+
+            <label>Department:</label>
+            <select id="deaprtment"name="department">
+                <option value="CSE">CSE</option>
+                 <option value="EEE">EEE</option>
+                  <option value="BBA">BBA</option>
+                   <option value="ENGLISH">ENGLISH</option>
+            </select><br><br>
+
+            <input type="checkbox" id="terms"name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+
+            <input type="submit"value="Submit">
+            <input type="reset"value="Cancel">
+
+        </form>
+    </body>
+</html>
