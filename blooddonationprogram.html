@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-widtth,initial scale=1.0">
+    <title>Life Saver Blood Donation Program</title>
+    <link rel="stylesheet"href="externalcss.css">
+    <style>
+         body{
+                font-family: Arial, sans--serif;
+                background-color:#f2f2f2;
+
+            }
+            
+             h2 {
+                text-align:center;
+                color:navy;
+            }
+            p{
+                text-align:center;
+            }
+
+            form{
+                width:800px;
+                margin:auto;
+                padding:30px;
+                background-color:white;
+                border:1px solid gray;
+                border-radius:10px;
+            }
+
+            fieldset{
+                padding:20px;
+                margin-bottom:20px;
+                
+            }
+
+            legend{
+                color:darked;
+                font-weight:bold;
+
+            }
+
+            input,
+            textarea,
+            select{
+                width:100%;
+                padding:8px;
+                margin-top:5px;
+                margin-bottom:15px;
+                outline:none;
+            }
+            table{
+                width:800px;
+                margin:auto;
+                border-collapse:collapse;
+            }
+            table th,td{
+                border:1px solid black;
+                padding:10px;
+                text-align:center;
+            }
+       
+    </style>
+
+
+</head>
+
+<body>
+    
+    <header>
+        <h1 style="style-decoration: underline;">Life Saver Blood Donation Program
+            </h1>
+            <p>
+                Welcome to the Life Saver Blood Donation Program.
+                Request as ablood donor or submit an emergency blood request during emergencies.
+            </p>
+             
+            
+        </header>
+        <main>
+            <section>
+              <form action="'#"method="post">
+                <fieldset>
+                    <legend>Blood Donor Registration</legend>
+                    <label for="name">Name:</label>
+                     <input type="text id"="name" name="name" required><br><br>
+
+                     <label>Age:</label>
+                     <input type="number id"="age" name="age" required><br><br>
+
+                     <label>Blood Group:</label>
+            <select id="bloodgroup"name="bloodgroup">
+                <option value="A+">A+</option>
+                 <option value="B+">B+</option>
+                  <option value="AB+">AB+</option>
+                   <option value="O+">O+</option>
+            </select><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel"id="phone"name="phone"required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"name="email"required><br><br>
+            <label for="address">Address:</label>
+             <input type="textarea" id="address" name="address" required><br><br>
+              <label for="blooddonation">Blood Donation Date:</label><br>
+            <input type="date"id="blooddonation"name="blooddonation"required><br><br>
+              <label for="health">Health Condition:</label><br>
+            <input type="text"id="health"name="health"required><br><br>
+            <input type="submit"value="Register" style="background-color:green;color:white">
+            
+            
+
+
+                </fieldset>
+
+              </form>
+            </section>
+            <section>
+             <form action="'#"method="post">
+                <fieldset>
+                    <legend>Blood Request Form</legend>
+                    <label for="name">Patient Name:</label>
+                     <input type="text id"="name" name="name" required><br><br>
+
+                     <label for="blood">Required Blood group:</label>
+                     <input type="text id"="bloodgroup" name="bloodgroup" required><br><br>
+
+                     <label for="hospitalname">Hospital Name:</label>
+                     <input type="text id"="hospitalname" name="hospitalname" required><br><br>
+
+                      <label for="contact">Emargency Contact:</label><br>
+            <input type="tel"id="contact"name="contact"required><br><br>
+
+            <label for="requireddate">Required Date:</label><br>
+            <input type="date"id="requireddate"name="requireddate"required><br><br>
+
+            <label for="message">Message:</label><br>
+            <input type="text"id="message"name="message"required><br><br>
+            <input type="submit"value="Request" style ="background-color:red;color:white">
+
+
+                </fieldset>
+             </form>
+              </section>
+              <section>
+              <h2>Avaliable Blood Donors</h2>
+
+              <table>
+                <tr>
+                    
+                    <th>Blood Group</th>
+                    <th>Registered Donors</th>
+
+
+                </tr>
+
+                <tr><td>A+</td><td>20</td></tr>
+                <tr><td>B+</td><td>18</td></tr>
+                <tr><td>AB+</td><td>10</td></tr>
+                <tr><td>O+</td><td>25</td></tr>
+              </table>
+              </section>
+              </main>
+
+        <footer>
+            <p style="text-align:center;">2026 Life Saver Donation Program</p>
+        </footer>
+    
+</body>
+</html>
