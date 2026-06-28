@@ -1,0 +1,48 @@
+
+label {
+    font-weight: bold;
+}
+ 
+
+* {
+    box-sizing: border-box;
+}
+ 
+/* ID Selector */
+#title {
+    text-decoration: underline;
+}
+.intro {
+    color: navy;
+}
+ 
+textarea {
+    resize: none;
+    overflow: auto;
+}
+ 
+/* Radio Button */
+input[type="radio"] {
+    width: auto;
+}
+ 
+/* Submit Button */
+input[type="submit"] {
+    width: auto;
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+ 
+input[type="submit"]:hover {
+    background-color: red;
+}
+ 
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid blue;
+}
+ 
