@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h2{
+            text-align: center;
+            color: navy;
+        }
+
+        form{
+            width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="file"]{
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Job Application Form</h2>
+
+<form action="#" method="post">
+
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="position">Position Applied For:</label><br>
+    <select id="position" name="position">
+        <option>Web Developer</option>
+        <option>Software Engineer</option>
+        <option>Network Engineer</option>
+        <option>Database Administrator</option>
+    </select><br><br>
+
+    <label>Gender:</label><br>
+
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+
+    <br><br>
+
+    <label for="cv">Upload CV:</label><br>
+    <input type="file" id="cv" name="cv"><br><br>
+
+    <label for="experience">Experience:</label><br>
+    <textarea id="experience" rows="4"></textarea><br><br>
+
+    <input type="checkbox" id="agree">
+    <label for="agree">I confirm that the information is correct.</label>
+    <br><br>
+
+    <input type="submit" value="Apply"
+           style="background-color:green;color:white;">
+
+    <input type="reset" value="Reset"
+           style="background-color:red;color:white;">
+
+</form>
+
+</body>
+</html>

@@ -8,7 +8,6 @@ label {
     box-sizing: border-box;
 }
  
-/* ID Selector */
 #title {
     text-decoration: underline;
 }
@@ -21,12 +20,11 @@ textarea {
     overflow: auto;
 }
  
-/* Radio Button */
 input[type="radio"] {
     width: auto;
 }
  
-/* Submit Button */
+
 input[type="submit"] {
     width: auto;
     background-color: darkred;
