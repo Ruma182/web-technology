@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Life Saver Blood Donation Program</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2fff2;
+        }
+
+        header{
+            background-color:green;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            color:green;
+        }
+
+        p{
+            text-align:center;
+        }
+
+        form{
+            width:800px;
+            margin:auto;
+            padding:30px;
+            background-color:white;
+            border:1px solid gray;
+            border-radius:10px;
+        }
+
+        fieldset{
+            border:2px solid green;
+            padding:20px;
+        }
+
+        legend{
+            color:green;
+            font-weight:bold;
+        }
+
+        input,
+        textarea,
+        select{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+        }
+
+        table{
+            width:800px;
+            margin:auto;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        table,th,td{
+            border:1px solid black;
+        }
+
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background-color:green;
+            color:white;
+        }
+
+        .box{
+            position:relative;
+            overflow:auto;
+            outline:2px solid green;
+            z-index:1;
+            margin:20px auto;
+            width:850px;
+            padding:10px;
+        }
+
+        #intro{
+            font-size:18px;
+        }
+
+        input[type=submit]:hover{
+            background-color:darkgreen;
+        }
+
+        footer{
+            background-color:green;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Life Saver Blood Donation Program</h1>
+
+<p id="intro">
+Donate Blood, Save Life
+</p>
+
+</header>
+
+<main>
+
+<section>
+
+<article class="box">
+
+<h2>Blood Donor Registration Form</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+
+<legend>Donor Information</legend>
+
+<label for="name">Name:</label><br>
+<input type="text" id="name" required><br><br>
+
+<label for="age">Age:</label><br>
+<input type="number" id="age" required><br><br>
+
+<label>Gender:</label><br>
+
+<input type="radio" id="male" name="gender" value="Male" style="width:auto;">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="Female" style="width:auto;">
+<label for="female">Female</label>
+
+<input type="radio" id="other" name="gender" value="Other" style="width:auto;">
+<label for="other">Other</label>
+
+<br><br>
+
+<label for="blood">Blood Group:</label><br>
+
+<select id="blood">
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+<br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email"><br><br>
+
+<label for="address">Address:</label><br>
+<textarea id="address" rows="4"></textarea><br><br>
+
+<label for="date">Last Donation Date:</label><br>
+<input type="date" id="date"><br><br>
+
+<label for="health">Health Condition:</label><br>
+<textarea id="health" rows="4"></textarea><br><br>
+
+<input type="submit"
+value="Register"
+style="background-color:green;color:white;">
+
+<input type="reset"
+value="Reset"
+style="background-color:red;color:white;">
+
+</fieldset>
+
+</form>
+
+</article>
+
+</section>
+<section>
+
+<article class="box">
+
+<h2>Blood Request Form</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+
+<legend>Emergency Blood Request</legend>
+
+<label for="patient">Patient Name:</label><br>
+<input type="text" id="patient" name="patient" required><br><br>
+
+<label for="group">Required Blood Group:</label><br>
+
+<select id="group" name="group">
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select><br><br>
+
+<label for="hospital">Hospital Name:</label><br>
+<input type="text" id="hospital" name="hospital"><br><br>
+
+<label for="contact">Emergency Contact Number:</label><br>
+<input type="tel" id="contact" name="contact"><br><br>
+
+<label for="requiredDate">Required Date:</label><br>
+<input type="date" id="requiredDate" name="requiredDate"><br><br>
+
+<label for="message">Additional Message:</label><br>
+<textarea id="message" name="message" rows="4"></textarea><br><br>
+
+<input type="submit"
+value="Submit Request"
+style="background-color:green; color:white;">
+
+<input type="reset"
+value="Reset"
+style="background-color:red; color:white;">
+
+</fieldset>
+
+</form>
+
+</article>
+
+</section>
+
+<section>
+
+<article>
+
+<h2>Available Blood Donors</h2>
+
+<table>
+
+<tr>
+    <th>Blood Group</th>
+    <th>Registered Donors</th>
+</tr>
+
+<tr>
+    <td>A+</td>
+    <td>20</td>
+</tr>
+
+<tr>
+    <td>A-</td>
+    <td>12</td>
+</tr>
+
+<tr>
+    <td>B+</td>
+    <td>18</td>
+</tr>
+
+<tr>
+    <td>B-</td>
+    <td>10</td>
+</tr>
+
+<tr>
+    <td>AB+</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>AB-</td>
+    <td>5</td>
+</tr>
+
+<tr>
+    <td>O+</td>
+    <td>25</td>
+</tr>
+
+<tr>
+    <td>O-</td>
+    <td>7</td>
+</tr>
+
+</table>
+
+</article>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+&copy; 2026 Life Saver Blood Donation Program.
+</p>
+
+</footer>
+
+</body>
+
+</html>
